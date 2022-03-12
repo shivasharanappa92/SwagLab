@@ -19,7 +19,8 @@ Feature: login to swag lab and verifying navigation menu
     Given I visit the website
     When I enter user name  as locked_out_user and password
     And click login button
-    Then user shouldn't   login to main page
+    Then user shouldn't login to main page
+    And browser should close
 
 
 @LoginWith_problem_user
@@ -34,6 +35,7 @@ Feature: login to swag lab and verifying navigation menu
     Then I should to see reset of swag lab
     When I select Logout from menu with problem_user and got to login page
     When I select about from menu with problem_user
+  And browser should close
 
 
 @LoginWith_performance_glitch_user
