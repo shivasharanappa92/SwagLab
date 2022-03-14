@@ -130,6 +130,9 @@ public class CucumberMain extends Base {
         h.click_menu();
         Thread.sleep(2000);
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(h.Reset_menu)).click();
+        Thread.sleep(2000);
+        h.clickOnCross();
+
 
 
     }
